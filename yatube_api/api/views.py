@@ -52,4 +52,4 @@ class CommentViewSet(viewsets.ModelViewSet):
         if instance.author != self.request.user:
             raise API_RAISE_403
         instance.delete()
-
+        
